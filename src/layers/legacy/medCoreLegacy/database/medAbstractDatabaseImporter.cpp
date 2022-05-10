@@ -1002,7 +1002,7 @@ QString medAbstractDatabaseImporter::generateUniqueVolumeId ( const medAbstractD
     for( QString orient : orientations )
     {
         double d_orient = orient.toDouble();
-        orientation += QString::number ( d_orient, 'g', 5 );
+        orientation += QString::number ( d_orient, 'f', 4 );
     }
 
     // define a unique key string to identify which volume an image belongs to.
